@@ -65,59 +65,57 @@ Backend
 
 2️⃣ Database Setup
 Create two separate databases:
-CREATE DATABASE auth_db;
-CREATE DATABASE attendance_db;
+- CREATE DATABASE auth_db;
+- CREATE DATABASE attendance_db;
 
 3️⃣ Environment Configuration
 Create .env file inside each service.
 📌 backend/auth-service/.env
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASS=your_password
-DB_NAME=auth_db
-
-JWT_SECRET=your_secret_key
-JWT_EXPIRES_IN=1d
+- DB_HOST=localhost
+- DB_PORT=3306
+- DB_USER=root
+- DB_PASS=your_password
+- DB_NAME=auth_db
+- JWT_SECRET=your_secret_key
+- JWT_EXPIRES_IN=1d
 
 📌 backend/attendance-service/.env
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASS=your_password
-DB_NAME=attendance_db
-
-AUTH_SERVICE_URL=http://localhost:3001
+- DB_HOST=localhost
+- DB_PORT=3306
+- DB_USER=root
+- DB_PASS=your_password
+- DB_NAME=attendance_db
+- AUTH_SERVICE_URL=http://localhost:3001
 
 
 ⚠️ .env files are excluded via .gitignore.
 
 4️⃣ Install Dependencies
 Auth Service
-cd backend/auth-service
-npm install
+- cd backend/auth-service
+- npm install
 
 Attendance Service
-cd ../attendance-service
-npm install
+- cd ../attendance-service
+- npm install
 
 Frontend
-cd ../../frontend-wfh
-npm install
+- cd ../../frontend-wfh
+- npm install
 
 5️⃣ Run Database Migration
 
 This project uses TypeORM migration (production-style configuration).
 
 🔹 Auth Service
-cd backend/auth-service
-npm run migration:generate
-npm run migration:run
+- cd backend/auth-service
+- npm run migration:generate
+- npm run migration:run
 
 🔹 Attendance Service
-cd backend/attendance-service
-npm run migration:generate
-npm run migration:run
+- cd backend/attendance-service
+- npm run migration:generate
+- npm run migration:run
 
 6️⃣ Seed Initial Data
 
@@ -126,8 +124,8 @@ Seed will create:
 1 Admin user
 
 🔹 Seed Auth Service
-cd backend/auth-service
-npm run seed
+- cd backend/auth-service
+- npm run seed
 
 
 Default Admin Credential:
@@ -136,13 +134,13 @@ Email: admin@wfh.com
 Password: password123
 
 🔹 Seed Attendance Service
-cd backend/attendance-service
-npm run seed
+- cd backend/attendance-service
+- npm run seed
 
 7️⃣ Run the Application
 🔹 Start Auth Service
-cd backend/auth-service
-npm run start:dev
+- cd backend/auth-service
+- npm run start:dev
 
 
 Runs on:
@@ -150,8 +148,8 @@ Runs on:
 http://localhost:3001
 
 🔹 Start Attendance Service
-cd backend/attendance-service
-npm run start:dev
+- cd backend/attendance-service
+- npm run start:dev
 
 
 Runs on:
@@ -159,8 +157,8 @@ Runs on:
 http://localhost:3002
 
 🔹 Start Frontend
-cd frontend-wfh
-npm run dev
+- cd frontend-wfh
+- npm run dev
 
 
 Runs on:
