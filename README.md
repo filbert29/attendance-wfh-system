@@ -60,8 +60,8 @@ Backend
 ⚙️ Setup Guide
 
 1️⃣ Clone Repository
-git clone https://github.com/filbert29/attendance-wfh-system.git
-cd WFH_Attendance
+- git clone https://github.com/filbert29/attendance-wfh-system.git
+- cd WFH_Attendance
 
 2️⃣ Database Setup
 Create two separate databases:
