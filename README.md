@@ -11,7 +11,7 @@ Authentication: JWT
 Architecture: Microservices
 
 🏗 Architecture Overview
-WFH_Attendance/
+attendance-wfh-system/
 │
 ├── frontend-wfh/              → React + Vite
 │
@@ -61,7 +61,7 @@ Backend
 
 1️⃣ Clone Repository
 - git clone https://github.com/filbert29/attendance-wfh-system.git
-- cd WFH_Attendance
+- cd attendance-wfh-system
 
 2️⃣ Database Setup
 Create two separate databases:
