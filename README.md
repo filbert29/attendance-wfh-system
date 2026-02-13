@@ -129,9 +129,8 @@ Seed will create:
 
 
 Default Admin Credential:
-
-Email: admin@wfh.com
-Password: password123
+- Email: admin@wfh.com
+- Password: password123
 
 🔹 Seed Attendance Service
 - cd backend/attendance-service
