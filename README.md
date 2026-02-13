@@ -186,8 +186,5 @@ http://localhost:5173
 - Role-based middleware improvement
 
 👨‍💻 Developed For
-Software Engineer Technical Assessment
-
-👨‍💻 Developed For
 
 Software Engineer Technical Assessment
