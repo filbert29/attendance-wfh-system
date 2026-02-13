@@ -70,6 +70,7 @@ Create two separate databases:
 
 3️⃣ Environment Configuration
 Create .env file inside each service.
+
 📌 backend/auth-service/.env
 - DB_HOST=localhost
 - DB_PORT=3306
@@ -86,6 +87,10 @@ Create .env file inside each service.
 - DB_PASS=your_password
 - DB_NAME=attendance_db
 - AUTH_SERVICE_URL=http://localhost:3001
+
+📌 frontend-wfh/.env
+- VITE_AUTH_API_URL=http://localhost:3001
+- VITE_ATTENDANCE_API_URL=http://localhost:3002
 
 
 ⚠️ .env files are excluded via .gitignore.
