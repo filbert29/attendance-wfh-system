@@ -3,11 +3,11 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Employee } from './entity/employee.entity';
 import { EmployeesService } from './employees.service';
 import { EmployeesController } from './employees.controller';
-import { AuthClientService } from 'src/auth/auth-client.service';
-import { AuthGuard } from 'src/auth/auth.guard';
-import { Attendance } from 'src/attendance/entity/attendance.entity';
-import { AttendancePicture } from 'src/attendance/entity/attendance-picture.entity';
-import { AttendanceRequest } from 'src/attendance/entity/attendance-request.entity';
+import { AuthClientService } from '../auth/auth-client.service';
+import { AuthGuard } from '../auth/auth.guard';
+import { Attendance } from '../attendance/entity/attendance.entity';
+import { AttendancePicture } from '../attendance/entity/attendance-picture.entity';
+import { AttendanceRequest } from '../attendance/entity/attendance-request.entity';
 
 @Module({
   imports: [

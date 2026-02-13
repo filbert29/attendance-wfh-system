@@ -9,9 +9,9 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { Attendance } from './entity/attendance.entity';
 import { AttendancePicture } from './entity/attendance-picture.entity';
-import { Employee } from 'src/employees/entity/employee.entity';
+import { Employee } from '../employees/entity/employee.entity';
 import { AttendanceRequest } from './entity/attendance-request.entity';
-import { AuthRequestUser } from 'src/employees/interface/employee.interface';
+import { AuthRequestUser } from '../employees/interface/employee.interface';
 
 @Injectable()
 export class AttendanceService {

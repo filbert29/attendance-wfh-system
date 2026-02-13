@@ -10,10 +10,10 @@ import {
   Query,
   UseGuards,
 } from '@nestjs/common';
-import { AuthGuard } from 'src/auth/auth.guard';
+import { AuthGuard } from '../auth/auth.guard';
 import { AttendanceService } from './attendance.service';
-import { EmployeesService } from 'src/employees/employees.service';
-import { CurrentUser } from 'src/auth/decorator/current-user.decorator';
+import { EmployeesService } from '../employees/employees.service';
+import { CurrentUser } from '../auth/decorator/current-user.decorator';
 
 import { UploadedFile, UseInterceptors } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
@@ -21,7 +21,7 @@ import { diskStorage } from 'multer';
 
 import { extname } from 'path';
 import * as fs from 'fs';
-import type { AuthRequestUser } from 'src/employees/interface/employee.interface';
+import type { AuthRequestUser } from '../employees/interface/employee.interface';
 
 @Controller('attendance')
 @UseGuards(AuthGuard)

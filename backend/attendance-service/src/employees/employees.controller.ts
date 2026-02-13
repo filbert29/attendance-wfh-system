@@ -17,8 +17,8 @@ import {
   CreateEmployeeDto,
   UpdateEmployeeDto,
 } from './interface/employee.interface';
-import { AuthGuard } from 'src/auth/auth.guard';
-import { CurrentUser } from 'src/auth/decorator/current-user.decorator';
+import { AuthGuard } from '../auth/auth.guard';
+import { CurrentUser } from '../auth/decorator/current-user.decorator';
 
 @Controller('employees')
 @UseGuards(AuthGuard)

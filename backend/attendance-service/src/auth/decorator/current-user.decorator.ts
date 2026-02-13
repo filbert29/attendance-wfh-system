@@ -1,5 +1,5 @@
 import { createParamDecorator, ExecutionContext } from '@nestjs/common';
-import { AuthRequestUser } from 'src/employees/interface/employee.interface';
+import { AuthRequestUser } from '../../employees/interface/employee.interface';
 
 export const CurrentUser = createParamDecorator(
   (_: unknown, ctx: ExecutionContext): AuthRequestUser => {

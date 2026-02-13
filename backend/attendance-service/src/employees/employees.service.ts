@@ -15,9 +15,9 @@ import {
   CreateUserResponse,
   UpdateEmployeeDto,
 } from './interface/employee.interface';
-import { Attendance } from 'src/attendance/entity/attendance.entity';
-import { AttendancePicture } from 'src/attendance/entity/attendance-picture.entity';
-import { AttendanceRequest } from 'src/attendance/entity/attendance-request.entity';
+import { Attendance } from '../attendance/entity/attendance.entity';
+import { AttendancePicture } from '../attendance/entity/attendance-picture.entity';
+import { AttendanceRequest } from '../attendance/entity/attendance-request.entity';
 import { ConfigService } from '@nestjs/config';
 
 @Injectable()
